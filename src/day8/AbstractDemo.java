@@ -20,6 +20,7 @@ package day8;
  Animal a = new Cat();
  */
 
+
 //abstract class Animal //抽象类的声明格式
 abstract class Animal {
 	// 抽象方法
