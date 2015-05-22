@@ -5,9 +5,9 @@ package day11;
 public class A{
 	private String name;
 	private int age;
-
 	public A() {
 		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	public A(String name, int age) {
