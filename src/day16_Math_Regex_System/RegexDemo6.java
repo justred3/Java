@@ -1,4 +1,4 @@
-package day16;
+package day16_Math_Regex_System;
 /*
  * 替换功能
  *  	String类的public String replaceAll(String regex,String replacement)

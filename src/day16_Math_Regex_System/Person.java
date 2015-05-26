@@ -1,4 +1,4 @@
-package day16;
+package day16_Math_Regex_System;
 
 public class Person {
 	private String name;

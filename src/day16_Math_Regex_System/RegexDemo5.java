@@ -1,4 +1,4 @@
-package day16;
+package day16_Math_Regex_System;
 
 
 /*
@@ -30,6 +30,7 @@ public class RegexDemo5 {
 		System.out.println("---------------------");
 		
 		//硬盘上的路径，我们应该用\\替代\
+		//因为这里有两个\，所以就需要4个\	
 		String s4 = "E:\\JavaSE\\day14\\avi";
 		String[] str4Array = s4.split("\\\\");
 		for (int x = 0; x < str4Array.length; x++) {

@@ -1,4 +1,4 @@
-package day16;
+package day16_Math_Regex_System;
 
 
 import java.util.Arrays;
@@ -39,6 +39,7 @@ public class RegexTest2 {
 			sb.append(arr[x]).append(" ");
 		}
 		//转化为字符串
+		// String trim()  返回字符串的副本，忽略前导空白和尾部空白。 
 		String result = sb.toString().trim();
 		
 		//输出字符串

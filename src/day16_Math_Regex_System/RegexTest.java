@@ -1,4 +1,4 @@
-package day16;
+package day16_Math_Regex_System;
 
 import java.util.Scanner;
 
@@ -25,6 +25,9 @@ public class RegexTest {
 		
 		//定义邮箱的规则
 		//String regex = "[a-zA-Z_0-9]+@[a-zA-Z_0-9]{2,6}(\\.[a-zA-Z_0-9]{2,3})+";
+		//首先说明[a-zA-Z_0-9]用\\w代替
+		//然后\\.因为我们需要输入.字符本身需要写成\.然后加上转义符\,所以是\\.
+		//(\\.[a-zA-Z_0-9]{2,3})+这里的意思是括号里面的东西可以出现多次，就是为了.com.cn这个格式，是一种嵌套式写法
 		String regex = "\\w+@\\w{2,6}(\\.\\w{2,3})+";
 		
 		//调用功能，判断即可
