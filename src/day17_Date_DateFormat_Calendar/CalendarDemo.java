@@ -18,7 +18,7 @@ public class CalendarDemo {
 		int month = rightNow.get(Calendar.MONTH);
 		// 获取日
 		int date = rightNow.get(Calendar.DATE);
-
+		//为什么month要加上1，因为月是从0开始算的；
 		System.out.println(year + "年" + (month + 1) + "月" + date + "日");
 	}
 }
