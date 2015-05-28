@@ -1,4 +1,4 @@
-package day17_Collection;
+package day18_Collection_Iterator_List;
 
 import java.util.ArrayList;
 import java.util.Collection;
