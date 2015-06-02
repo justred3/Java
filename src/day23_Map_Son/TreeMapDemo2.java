@@ -15,30 +15,40 @@ import java.util.function.ToLongFunction;
  */
 public class TreeMapDemo2 {
 	public static void main(String[] args) {
-		TreeMap<Student, String> tm = new TreeMap<Student, String>(new Comparator<Student>(
-				
-				) {
+		// 创建集合对象
+		TreeMap<Student, String> tm = new TreeMap<Student, String>(
+				new Comparator<Student>() {
 					@Override
 					public int compare(Student s1, Student s2) {
-						//对比两个学生名字
-						int num = s2.getName().compareTo(s1.getName());
-						//对比年龄
-						int num2 = num==0?s2.getAge()-s1.getAge():0;
+						// 主要条件
+						int num = s1.getAge() - s2.getAge();
+						// 次要条件
+						int num2 = num == 0 ? s1.getName().compareTo(
+								s2.getName()) : num;
 						return num2;
 					}
-		});
-		Student s1 = new Student("离开家", 15);
-		Student s2 = new Student("离开家", 15);
-		Student s3 = new Student("立即", 15);
-		Student s4 = new Student("离家", 15);
-		tm.put(s1, "科健");
-		tm.put(s2, "可降低");
-		tm.put(s3, "我");
-		tm.put(s4, "扣");
+				});
+
+		// 创建学生对象
+		Student s1 = new Student("潘安", 30);
+		Student s2 = new Student("柳下惠", 35);
+		Student s3 = new Student("唐伯虎", 33);
+		Student s4 = new Student("燕青", 32);
+		Student s5 = new Student("唐伯虎", 33);
+
+		// 存储元素
+		tm.put(s1, "宋朝");
+		tm.put(s2, "元朝");
+		tm.put(s3, "明朝");
+		tm.put(s4, "清朝");
+		tm.put(s5, "汉朝");
+
+		// 遍历
 		Set<Student> set = tm.keySet();
 		for (Student key : set) {
 			String value = tm.get(key);
-			System.out.println(key.getName()+"\t"+key.getAge()+"\t"+value);
+			System.out.println(key.getName() + "---" + key.getAge() + "---"
+					+ value);
 		}
 	}
 }
