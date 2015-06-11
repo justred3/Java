@@ -1,7 +1,3 @@
-的拉je
-di里的
-开发
-就离
-开看
-vnfik
-的edi
+hello
+true
+100

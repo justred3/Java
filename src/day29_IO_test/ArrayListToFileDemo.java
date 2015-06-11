@@ -1,4 +1,4 @@
-package day_29_IO_test;
+package day29_IO_test;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
