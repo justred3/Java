@@ -1,4 +1,4 @@
-package day_29_IO;
+package day29_IO;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
