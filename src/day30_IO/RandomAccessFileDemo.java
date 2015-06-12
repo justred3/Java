@@ -1,6 +1,5 @@
 package day30_IO;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
@@ -21,7 +20,7 @@ public class RandomAccessFileDemo {
 
 	private static void read() throws IOException {
 		// 创建随机访问流对象
-		RandomAccessFile raf = new RandomAccessFile("a.txt", "rw");
+		RandomAccessFile raf = new RandomAccessFile("raf.txt", "rw");
 
 		int i = raf.readInt();
 		System.out.println(i);
