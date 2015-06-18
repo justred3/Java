@@ -3,6 +3,10 @@ package day34_Thread;
  * 线程组： 把多个线程组合到一起。
  * 它可以对一批线程进行分类管理，Java允许程序直接对线程组进行控制。
  */
+/*
+ * 线程组： 把多个线程组合到一起。
+ * 它可以对一批线程进行分类管理，Java允许程序直接对线程组进行控制。
+ */
 public class ThreadGroupDemo {
 	public static void main(String[] args) {
 		// method1();
