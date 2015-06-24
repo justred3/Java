@@ -24,7 +24,7 @@ public class InetAddressDemo {
 		// public static InetAddress getByName(String host)
 		// InetAddress address = InetAddress.getByName("liuyi");
 		// InetAddress address = InetAddress.getByName("192.168.12.92");
-		InetAddress address = InetAddress.getByName("192.168.12.63");
+		InetAddress address = InetAddress.getByName("192.168.1.2");
 
 		// 获取两个东西：主机名，IP地址
 		// public String getHostName()
