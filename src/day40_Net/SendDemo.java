@@ -26,7 +26,7 @@ public class SendDemo {
 		//长度
 		int length = bys.length;
 		//IP地址对象
-		InetAddress address = InetAddress.getByName("192.168.1.101");
+		InetAddress address = InetAddress.getByName("192.168.1.49");
 		//端口
 		int port = 10086;
 		DatagramPacket dp = new DatagramPacket(bys,length,address,port);
