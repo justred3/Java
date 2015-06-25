@@ -8,28 +8,27 @@ import java.io.OutputStreamWriter;
 import java.net.Socket;
 
 /*
- * 客户端键盘录入，服务器输出到控制台
+ * 客户端键盘录入，服务器输出文本文件
  */
-public class ClientDemo3 {
-	public static void main(String[] args) throws IOException {
+public class ClientDemo4 {
+	public static void main(String [] args) throws IOException{
 		//创建客户端Socket对象
-		Socket s = new Socket("192.168.1.100",22222);
+		Socket s = new Socket("192.168.1.100",23456);
 		
-		//键盘录入数据
+		//封装键盘录入
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		//把通道内的流给包装一下
-		BufferedWriter bw =new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
-		String line= null;
+		//封装通道内的数据
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
+		
+		String line = null;
 		while((line=br.readLine())!=null){
-			//键盘录入数据要自定义结束标记
-			if("886".equals(line)){
+			if("over".equals(line)){
 				break;
 			}
-			bw.write(line);;
+			bw.write(line);
 			bw.newLine();
 			bw.flush();
 		}
-		//释放资源
 		s.close();
 	}
 }
