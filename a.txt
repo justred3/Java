@@ -1,3 +1,2 @@
-sdf
-adfaef
-sdjhsdkfjha
+className=day42_Reflect.Worker
+methodName=love

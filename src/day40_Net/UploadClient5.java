@@ -11,11 +11,13 @@ import java.net.Socket;
 public class UploadClient5 {
 	public static void main(String[] args) throws IOException {
 		// 创建客户端Socket对象
-		Socket s = new Socket("192.168.12.92", 11111);
+		Socket s = new Socket("192.168.1.49", 11111);
 
 		// 封装文本文件
+		// BufferedReader br = new BufferedReader(new FileReader(
+		// "InetAddressDemo.java"));
 		BufferedReader br = new BufferedReader(new FileReader(
-				"InetAddressDemo.java"));
+				"ReceiveDemo.java"));
 		// 封装通道内流
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
 				s.getOutputStream()));
@@ -41,3 +43,4 @@ public class UploadClient5 {
 		s.close();
 	}
 }
+
